@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "path": "/v3/location?keyword=40112",
+    "http_status_code": 200,
+    "http_status": "OK",
+    "timestamp": 1669703103
+  },
+  "data": [
+    {
+      "adm_level_1": {
+        "id": 228,
+        "level": 1,
+        "type": "country",
+        "name": "INDONESIA",
+        "code": "ID"
+      },
+      "adm_level_2": {
+        "id": 9,
+        "level": 2,
+        "type": "province",
+        "name": "Jawa Barat"
+      },
+      "adm_level_3": {
+        "id": 478,
+        "level": 3,
+        "type": "city",
+        "name": "Bandung, Kota",
+        "geo_coord": {
+          "lat": -7.1340702,
+          "lng": 107.6215321
+        }
+      },
+      "adm_level_4": {
+        "id": 1255,
+        "level": 4,
+        "type": "suburb",
+        "name": "Sumur Bandung",
+        "geo_coord": {
+          "lat": -6.9152353,
+          "lng": 107.612654
+        }
+      },
+      "adm_level_5": {
+        "id": 12284,
+        "level": 5,
+        "type": "area",
+        "name": "Kebon Pisang",
+        "geo_coord": {
+          "lat": -6.9189281,
+          "lng": 107.617093
+        },
+        "postcode": "40112"
+      },
+      "adm_level_cur": {
+        "id": 12284,
+        "level": 5,
+        "type": "area",
+        "name": "Kebon Pisang",
+        "geo_coord": {
+          "lat": -6.9189281,
+          "lng": 107.617093
+        },
+        "postcode": "40112"
+      },
+      "display_txt": "40112, Kebon Pisang, Sumur Bandung, Bandung, Kota, Jawa Barat, INDONESIA",
+      "postcodes": ["40112"]
+    }
+  ],
+  "pagination": {
+    "current_page": 1,
+    "current_elements": 1,
+    "total_pages": 1,
+    "total_elements": 1
+  }
+}

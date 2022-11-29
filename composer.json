@@ -1,0 +1,41 @@
+{
+  "name": "meteor/shipper",
+  "description": "Shipper Implementation",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "beta",
+  "authors": [
+    {
+      "name": "Aslam H",
+      "email": "aslam.hafidz@meteor.id"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Meteor\\Shipper\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Meteor\\Shipper\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Meteor\\Shipper\\ShipperServiceProvider"
+      ],
+      "aliases": {
+        "Shipper": "Meteor\\Shipper\\Facades\\Shipper"
+      }
+    }
+  },
+  "require-dev": {
+    "laravel/pint": "^1.2",
+    "orchestra/testbench": "^6.0|^7.0",
+    "phpunit/phpunit": "^9.5"
+  },
+  "require": {
+    "guzzlehttp/guzzle": "^7.5"
+  }
+}

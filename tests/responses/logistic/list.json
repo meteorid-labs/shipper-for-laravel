@@ -1,0 +1,1116 @@
+{
+  "metadata": {
+    "path": "/v3/logistic",
+    "http_status_code": 200,
+    "http_status": "OK",
+    "timestamp": 1669696226
+  },
+  "data": [
+    {
+      "logistic": {
+        "id": 39,
+        "name": "Anteraja",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/anteraja.240x90.png",
+        "code": "ANT"
+      },
+      "id": 562,
+      "name": "Regular",
+      "type_name": "Regular",
+      "volumetric": 6000,
+      "min_kg": 1,
+      "max_kg": 50
+    },
+    {
+      "logistic": {
+        "id": 39,
+        "name": "Anteraja",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/anteraja.240x90.png",
+        "code": "ANT"
+      },
+      "id": 563,
+      "name": "Same Day",
+      "type_name": "Same Day",
+      "volumetric": 6000,
+      "min_kg": 1,
+      "max_kg": 5
+    },
+    {
+      "logistic": {
+        "id": 39,
+        "name": "Anteraja",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/anteraja.240x90.png",
+        "code": "ANT"
+      },
+      "id": 564,
+      "name": "Next Day",
+      "type_name": "Express",
+      "volumetric": 6000,
+      "min_kg": 1,
+      "max_kg": 50
+    },
+    {
+      "logistic": {
+        "id": 45,
+        "name": "Aramex",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/aramex-white.240x90.png",
+        "code": "Aramex"
+      },
+      "id": 578,
+      "name": "Priority Parcel Express",
+      "type_name": "International",
+      "volumetric": 5000,
+      "min_kg": 0,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 41,
+        "name": "Dakota Cargo",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/dakota.240x90.png",
+        "code": "DAKOTA"
+      },
+      "id": 573,
+      "name": "Reguler",
+      "type_name": "Trucking",
+      "volumetric": 4000,
+      "min_kg": 1,
+      "max_kg": 149
+    },
+    {
+      "logistic": {
+        "id": 41,
+        "name": "Dakota Cargo",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/dakota.240x90.png",
+        "code": "DAKOTA"
+      },
+      "id": 574,
+      "name": "Two Days Service",
+      "type_name": "Hidden",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 24,
+        "name": "DPEX",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/dpex.240x90.png",
+        "code": "DPX"
+      },
+      "id": 326,
+      "name": "EXPRESS DOCUMENT",
+      "type_name": "Hidden",
+      "volumetric": 5000,
+      "min_kg": 0,
+      "max_kg": 100
+    },
+    {
+      "logistic": {
+        "id": 24,
+        "name": "DPEX",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/dpex.240x90.png",
+        "code": "DPX"
+      },
+      "id": 327,
+      "name": "EXPRESS PARCEL",
+      "type_name": "International",
+      "volumetric": 5000,
+      "min_kg": 0,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 25,
+        "name": "GO-SEND",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/gosend.240x90.png",
+        "code": "GSN"
+      },
+      "id": 328,
+      "name": "Same Day (Bulk)",
+      "type_name": "Hidden",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 5
+    },
+    {
+      "logistic": {
+        "id": 25,
+        "name": "GO-SEND",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/gosend.240x90.png",
+        "code": "GSN"
+      },
+      "id": 329,
+      "name": "Instant",
+      "type_name": "Instant",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 20
+    },
+    {
+      "logistic": {
+        "id": 25,
+        "name": "GO-SEND",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/gosend.240x90.png",
+        "code": "GSN"
+      },
+      "id": 336,
+      "name": "Same Day (Direct)",
+      "type_name": "Same Day",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 5
+    },
+    {
+      "logistic": {
+        "id": 31,
+        "name": "Grab Express",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/grab.240x90.png",
+        "code": "GRB"
+      },
+      "id": 12,
+      "name": "Regular",
+      "type_name": "Hidden",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 100
+    },
+    {
+      "logistic": {
+        "id": 31,
+        "name": "Grab Express",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/grab.240x90.png",
+        "code": "GRB"
+      },
+      "id": 46,
+      "name": "Same Day",
+      "type_name": "Hidden",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 100
+    },
+    {
+      "logistic": {
+        "id": 31,
+        "name": "Grab Express",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/grab.240x90.png",
+        "code": "GRB"
+      },
+      "id": 47,
+      "name": "Next Day",
+      "type_name": "Hidden",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 100
+    },
+    {
+      "logistic": {
+        "id": 31,
+        "name": "Grab Express",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/grab.240x90.png",
+        "code": "GRB"
+      },
+      "id": 339,
+      "name": "Same Day (Bulk)",
+      "type_name": "Hidden",
+      "volumetric": 6000,
+      "min_kg": 1,
+      "max_kg": 7
+    },
+    {
+      "logistic": {
+        "id": 31,
+        "name": "Grab Express",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/grab.240x90.png",
+        "code": "GRB"
+      },
+      "id": 340,
+      "name": "Instant",
+      "type_name": "Instant",
+      "volumetric": 6000,
+      "min_kg": 1,
+      "max_kg": 15
+    },
+    {
+      "logistic": {
+        "id": 31,
+        "name": "Grab Express",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/grab.240x90.png",
+        "code": "GRB"
+      },
+      "id": 341,
+      "name": "Same Day (Direct)",
+      "type_name": "Same Day",
+      "volumetric": 6000,
+      "min_kg": 1,
+      "max_kg": 7
+    },
+    {
+      "logistic": {
+        "id": 38,
+        "name": "Indah Cargo",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/indah-cargo.240x90.png",
+        "code": "IND"
+      },
+      "id": 560,
+      "name": "Darat",
+      "type_name": "Trucking",
+      "volumetric": 6000,
+      "min_kg": 1,
+      "max_kg": 100
+    },
+    {
+      "logistic": {
+        "id": 38,
+        "name": "Indah Cargo",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/indah-cargo.240x90.png",
+        "code": "IND"
+      },
+      "id": 561,
+      "name": "Laut",
+      "type_name": "Hidden",
+      "volumetric": 6000,
+      "min_kg": 1,
+      "max_kg": 100
+    },
+    {
+      "logistic": {
+        "id": 9,
+        "name": "J&T",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/jnt.240x90.png",
+        "code": "JNT"
+      },
+      "id": 57,
+      "name": "Express",
+      "type_name": "Regular",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 125
+    },
+    {
+      "logistic": {
+        "id": 46,
+        "name": "J&T Cargo",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/jnt_cargo.240x90.png",
+        "code": "JTCargo"
+      },
+      "id": 581,
+      "name": "FastTrack",
+      "type_name": "Trucking",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 10000
+    },
+    {
+      "logistic": {
+        "id": 43,
+        "name": "Janio",
+        "logo_url": "https://janio.asia/wp-content/themes/janio/images/logo-header.png",
+        "code": "Janio"
+      },
+      "id": 580,
+      "name": "Janio",
+      "type_name": "International",
+      "volumetric": 5000,
+      "min_kg": 0,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 1,
+        "name": "JNE",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/jne.240x90.png",
+        "code": "JNE"
+      },
+      "id": 1,
+      "name": "REG",
+      "type_name": "Regular",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 306
+    },
+    {
+      "logistic": {
+        "id": 1,
+        "name": "JNE",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/jne.240x90.png",
+        "code": "JNE"
+      },
+      "id": 2,
+      "name": "YES",
+      "type_name": "Express",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 69
+    },
+    {
+      "logistic": {
+        "id": 1,
+        "name": "JNE",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/jne.240x90.png",
+        "code": "JNE"
+      },
+      "id": 3,
+      "name": "OKE",
+      "type_name": "Regular",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 69
+    },
+    {
+      "logistic": {
+        "id": 1,
+        "name": "JNE",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/jne.240x90.png",
+        "code": "JNE"
+      },
+      "id": 4,
+      "name": "CTC",
+      "type_name": "Regular",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 69
+    },
+    {
+      "logistic": {
+        "id": 1,
+        "name": "JNE",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/jne.240x90.png",
+        "code": "JNE"
+      },
+      "id": 10,
+      "name": "CTCYES",
+      "type_name": "Express",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 69
+    },
+    {
+      "logistic": {
+        "id": 1,
+        "name": "JNE",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/jne.240x90.png",
+        "code": "JNE"
+      },
+      "id": 312,
+      "name": "JTR",
+      "type_name": "Trucking",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 10000
+    },
+    {
+      "logistic": {
+        "id": 1,
+        "name": "JNE",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/jne.240x90.png",
+        "code": "JNE"
+      },
+      "id": 314,
+      "name": "JTR250",
+      "type_name": "Hidden",
+      "volumetric": 6000,
+      "min_kg": 10,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 1,
+        "name": "JNE",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/jne.240x90.png",
+        "code": "JNE"
+      },
+      "id": 315,
+      "name": "JTR<150",
+      "type_name": "Hidden",
+      "volumetric": 6000,
+      "min_kg": 10,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 1,
+        "name": "JNE",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/jne.240x90.png",
+        "code": "JNE"
+      },
+      "id": 316,
+      "name": "JTR>250",
+      "type_name": "Hidden",
+      "volumetric": 6000,
+      "min_kg": 10,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 1,
+        "name": "JNE",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/jne.240x90.png",
+        "code": "JNE"
+      },
+      "id": 317,
+      "name": "INTL",
+      "type_name": "International",
+      "volumetric": 5000,
+      "min_kg": 0,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 1,
+        "name": "JNE",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/jne.240x90.png",
+        "code": "JNE"
+      },
+      "id": 378,
+      "name": "JNE OKE",
+      "type_name": "Regular",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 63
+    },
+    {
+      "logistic": {
+        "id": 42,
+        "name": "Lazada Express",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/lazada.240x90.png",
+        "code": "LEX"
+      },
+      "id": 575,
+      "name": "Lazada Express",
+      "type_name": "International",
+      "volumetric": 5000,
+      "min_kg": 0,
+      "max_kg": 100
+    },
+    {
+      "logistic": {
+        "id": 47,
+        "name": "LEX (HQ)",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/lazada.240x90.png",
+        "code": "LEX"
+      },
+      "id": 592,
+      "name": "LEX (HQ)",
+      "type_name": "International",
+      "volumetric": 5000,
+      "min_kg": 0,
+      "max_kg": 100
+    },
+    {
+      "logistic": {
+        "id": 16,
+        "name": "Lion Parcel",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/lion-parcel.240x90.png",
+        "code": "LPA"
+      },
+      "id": 42,
+      "name": "ONEPACK",
+      "type_name": "Express",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 100
+    },
+    {
+      "logistic": {
+        "id": 16,
+        "name": "Lion Parcel",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/lion-parcel.240x90.png",
+        "code": "LPA"
+      },
+      "id": 44,
+      "name": "REGPACK",
+      "type_name": "Regular",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 100
+    },
+    {
+      "logistic": {
+        "id": 15,
+        "name": "Ninja Xpress",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/ninja.240x90.png",
+        "code": "NIN"
+      },
+      "id": 227,
+      "name": "Next Day",
+      "type_name": "Express",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 100
+    },
+    {
+      "logistic": {
+        "id": 15,
+        "name": "Ninja Xpress",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/ninja.240x90.png",
+        "code": "NIN"
+      },
+      "id": 228,
+      "name": "Standard",
+      "type_name": "Regular",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 70
+    },
+    {
+      "logistic": {
+        "id": 26,
+        "name": "Paxel",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/paxel.240x90.png",
+        "code": "PXL"
+      },
+      "id": 330,
+      "name": "Same Day",
+      "type_name": "Hidden",
+      "volumetric": 6000,
+      "min_kg": 1,
+      "max_kg": 10
+    },
+    {
+      "logistic": {
+        "id": 26,
+        "name": "Paxel",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/paxel.240x90.png",
+        "code": "PXL"
+      },
+      "id": 367,
+      "name": "Same Day",
+      "type_name": "Hidden",
+      "volumetric": 6000,
+      "min_kg": 1,
+      "max_kg": 10
+    },
+    {
+      "logistic": {
+        "id": 26,
+        "name": "Paxel",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/paxel.240x90.png",
+        "code": "PXL"
+      },
+      "id": 368,
+      "name": "Same Day",
+      "type_name": "Same Day",
+      "volumetric": 6000,
+      "min_kg": 1,
+      "max_kg": 20
+    },
+    {
+      "logistic": {
+        "id": 26,
+        "name": "Paxel",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/paxel.240x90.png",
+        "code": "PXL"
+      },
+      "id": 566,
+      "name": "Next Day",
+      "type_name": "Express",
+      "volumetric": 6000,
+      "min_kg": 1,
+      "max_kg": 20
+    },
+    {
+      "logistic": {
+        "id": 44,
+        "name": "Premium Express",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/premium-express.240x90.png",
+        "code": "PEX"
+      },
+      "id": 577,
+      "name": "Express Easy",
+      "type_name": "International",
+      "volumetric": 5000,
+      "min_kg": 0,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 44,
+        "name": "Premium Express",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/premium-express.240x90.png",
+        "code": "PEX"
+      },
+      "id": 579,
+      "name": "Document",
+      "type_name": "Hidden",
+      "volumetric": 5000,
+      "min_kg": 0,
+      "max_kg": 100
+    },
+    {
+      "logistic": {
+        "id": 36,
+        "name": "Recommended by Shipper",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/shipper.240x90.png",
+        "code": "RBS"
+      },
+      "id": 365,
+      "name": "Performa Terbaik Regular",
+      "type_name": "Regular",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 36,
+        "name": "Recommended by Shipper",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/shipper.240x90.png",
+        "code": "RBS"
+      },
+      "id": 366,
+      "name": "Performa Terbaik Express",
+      "type_name": "Express",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 36,
+        "name": "Recommended by Shipper",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/shipper.240x90.png",
+        "code": "RBS"
+      },
+      "id": 582,
+      "name": "Best Price",
+      "type_name": "Regular",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 36,
+        "name": "Recommended by Shipper",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/shipper.240x90.png",
+        "code": "RBS"
+      },
+      "id": 583,
+      "name": "Best Price Reguler",
+      "type_name": "Regular",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 36,
+        "name": "Recommended by Shipper",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/shipper.240x90.png",
+        "code": "RBS"
+      },
+      "id": 584,
+      "name": "Best Price Express",
+      "type_name": "Express",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 36,
+        "name": "Recommended by Shipper",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/shipper.240x90.png",
+        "code": "RBS"
+      },
+      "id": 585,
+      "name": "Best Price Sameday",
+      "type_name": "Same Day",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 36,
+        "name": "Recommended by Shipper",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/shipper.240x90.png",
+        "code": "RBS"
+      },
+      "id": 586,
+      "name": "Best Price Instant",
+      "type_name": "Instant",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 36,
+        "name": "Recommended by Shipper",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/shipper.240x90.png",
+        "code": "RBS"
+      },
+      "id": 587,
+      "name": "Best Price Trucking",
+      "type_name": "Trucking",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 36,
+        "name": "Recommended by Shipper",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/shipper.240x90.png",
+        "code": "RBS"
+      },
+      "id": 588,
+      "name": "Performa Terbaik Sameday",
+      "type_name": "Same Day",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 36,
+        "name": "Recommended by Shipper",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/shipper.240x90.png",
+        "code": "RBS"
+      },
+      "id": 589,
+      "name": "Performa Terbaik Instant",
+      "type_name": "Instant",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 36,
+        "name": "Recommended by Shipper",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/shipper.240x90.png",
+        "code": "RBS"
+      },
+      "id": 590,
+      "name": "Performa Terbaik Trucking",
+      "type_name": "Trucking",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 36,
+        "name": "Recommended by Shipper",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/shipper.240x90.png",
+        "code": "RBS"
+      },
+      "id": 591,
+      "name": "Highest Commission",
+      "type_name": "Regular",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 10000
+    },
+    {
+      "logistic": {
+        "id": 3,
+        "name": "RPX",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/rpx.240x90.png",
+        "code": "RPX"
+      },
+      "id": 7,
+      "name": "REP",
+      "type_name": "Hidden",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 100
+    },
+    {
+      "logistic": {
+        "id": 3,
+        "name": "RPX",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/rpx.240x90.png",
+        "code": "RPX"
+      },
+      "id": 8,
+      "name": "RGP",
+      "type_name": "Regular",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 100
+    },
+    {
+      "logistic": {
+        "id": 3,
+        "name": "RPX",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/rpx.240x90.png",
+        "code": "RPX"
+      },
+      "id": 9,
+      "name": "ERP",
+      "type_name": "Hidden",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 100
+    },
+    {
+      "logistic": {
+        "id": 3,
+        "name": "RPX",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/rpx.240x90.png",
+        "code": "RPX"
+      },
+      "id": 11,
+      "name": "NDP",
+      "type_name": "Hidden",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 100
+    },
+    {
+      "logistic": {
+        "id": 3,
+        "name": "RPX",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/rpx.240x90.png",
+        "code": "RPX"
+      },
+      "id": 567,
+      "name": "PSS",
+      "type_name": "Same Day",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 3
+    },
+    {
+      "logistic": {
+        "id": 3,
+        "name": "RPX",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/rpx.240x90.png",
+        "code": "RPX"
+      },
+      "id": 571,
+      "name": "PSN",
+      "type_name": "Express",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 3
+    },
+    {
+      "logistic": {
+        "id": 3,
+        "name": "RPX",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/rpx.240x90.png",
+        "code": "RPX"
+      },
+      "id": 572,
+      "name": "PSR",
+      "type_name": "Regular",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 100
+    },
+    {
+      "logistic": {
+        "id": 33,
+        "name": "SAP",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/sap-express.240x90.png",
+        "code": "SAP"
+      },
+      "id": 349,
+      "name": "Reguler",
+      "type_name": "Regular",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 33,
+        "name": "SAP",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/sap-express.240x90.png",
+        "code": "SAP"
+      },
+      "id": 350,
+      "name": "One Day Service",
+      "type_name": "Express",
+      "volumetric": 6000,
+      "min_kg": 1,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 33,
+        "name": "SAP",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/sap-express.240x90.png",
+        "code": "SAP"
+      },
+      "id": 351,
+      "name": "Same Day Service",
+      "type_name": "Hidden",
+      "volumetric": 6000,
+      "min_kg": 1,
+      "max_kg": 30
+    },
+    {
+      "logistic": {
+        "id": 40,
+        "name": "Shopee Express",
+        "logo_url": "",
+        "code": "SHOPEX"
+      },
+      "id": 569,
+      "name": "Shopee Express",
+      "type_name": "Regular",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 75
+    },
+    {
+      "logistic": {
+        "id": 5,
+        "name": "SiCepat",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/sicepat.240x90.png",
+        "code": "SCP"
+      },
+      "id": 58,
+      "name": "REG",
+      "type_name": "Regular",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 100
+    },
+    {
+      "logistic": {
+        "id": 5,
+        "name": "SiCepat",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/sicepat.240x90.png",
+        "code": "SCP"
+      },
+      "id": 59,
+      "name": "BEST",
+      "type_name": "Express",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 100
+    },
+    {
+      "logistic": {
+        "id": 5,
+        "name": "SiCepat",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/sicepat.240x90.png",
+        "code": "SCP"
+      },
+      "id": 363,
+      "name": "Cargo Udara",
+      "type_name": "Hidden",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 350
+    },
+    {
+      "logistic": {
+        "id": 5,
+        "name": "SiCepat",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/sicepat.240x90.png",
+        "code": "SCP"
+      },
+      "id": 364,
+      "name": "Cargo Darat",
+      "type_name": "Hidden",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 350
+    },
+    {
+      "logistic": {
+        "id": 5,
+        "name": "SiCepat",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/sicepat.240x90.png",
+        "code": "SCP"
+      },
+      "id": 565,
+      "name": "GOKIL",
+      "type_name": "Trucking",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 350
+    },
+    {
+      "logistic": {
+        "id": 5,
+        "name": "SiCepat",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/sicepat.240x90.png",
+        "code": "SCP"
+      },
+      "id": 570,
+      "name": "HALU",
+      "type_name": "Regular",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 100
+    },
+    {
+      "logistic": {
+        "id": 6,
+        "name": "Tiki",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/tiki.240x90.png",
+        "code": "TIK"
+      },
+      "id": 52,
+      "name": "ONS",
+      "type_name": "Express",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 75
+    },
+    {
+      "logistic": {
+        "id": 6,
+        "name": "Tiki",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/tiki.240x90.png",
+        "code": "TIK"
+      },
+      "id": 54,
+      "name": "REG",
+      "type_name": "Regular",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 75
+    },
+    {
+      "logistic": {
+        "id": 6,
+        "name": "Tiki",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/tiki.240x90.png",
+        "code": "TIK"
+      },
+      "id": 298,
+      "name": "TDS",
+      "type_name": "Express",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 75
+    },
+    {
+      "logistic": {
+        "id": 6,
+        "name": "Tiki",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/tiki.240x90.png",
+        "code": "TIK"
+      },
+      "id": 568,
+      "name": "ECO",
+      "type_name": "Regular",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 75
+    },
+    {
+      "logistic": {
+        "id": 13,
+        "name": "Wahana",
+        "logo_url": "https://global-cdn.shipper.id/images/png/logistic/wahana.240x90.png",
+        "code": "WHN"
+      },
+      "id": 15,
+      "name": "Regular",
+      "type_name": "Same Day",
+      "volumetric": 6000,
+      "min_kg": 0,
+      "max_kg": 50
+    }
+  ]
+}

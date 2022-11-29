@@ -1,0 +1,166 @@
+{
+  "metadata": {
+    "path": "/v3/location/countries",
+    "http_status_code": 200,
+    "http_status": "OK",
+    "timestamp": 1669703160
+  },
+  "data": [
+    {
+      "id": 1,
+      "name": "AFGHANISTAN",
+      "code": "AF"
+    },
+    {
+      "id": 2,
+      "name": "ALBANIA",
+      "code": "AL"
+    },
+    {
+      "id": 3,
+      "name": "ALGERIA",
+      "code": "DZ"
+    },
+    {
+      "id": 4,
+      "name": "AMERICAN SAMOA",
+      "code": "AS"
+    },
+    {
+      "id": 5,
+      "name": "ANDORRA",
+      "code": "AD"
+    },
+    {
+      "id": 6,
+      "name": "ANGOLA",
+      "code": "AO"
+    },
+    {
+      "id": 7,
+      "name": "ANGUILLA",
+      "code": "AI"
+    },
+    {
+      "id": 8,
+      "name": "ANTIGUA & BARBUDA",
+      "code": "AG"
+    },
+    {
+      "id": 9,
+      "name": "ARGENTINA",
+      "code": "AR"
+    },
+    {
+      "id": 10,
+      "name": "ARMENIA",
+      "code": "AM"
+    },
+    {
+      "id": 11,
+      "name": "ARUBA",
+      "code": "AW"
+    },
+    {
+      "id": 12,
+      "name": "AUSTRALIA",
+      "code": "AU"
+    },
+    {
+      "id": 13,
+      "name": "AUSTRIA",
+      "code": "AT"
+    },
+    {
+      "id": 14,
+      "name": "AZERBAIJAN",
+      "code": "AZ"
+    },
+    {
+      "id": 15,
+      "name": "BAHAMAS",
+      "code": "BS"
+    },
+    {
+      "id": 16,
+      "name": "BAHRAIN",
+      "code": "BH"
+    },
+    {
+      "id": 17,
+      "name": "BANGLADESH",
+      "code": "BD"
+    },
+    {
+      "id": 18,
+      "name": "BARBADOS",
+      "code": "BB"
+    },
+    {
+      "id": 19,
+      "name": "BELARUS",
+      "code": "BY"
+    },
+    {
+      "id": 20,
+      "name": "BELGIUM",
+      "code": "BE"
+    },
+    {
+      "id": 21,
+      "name": "BELIZE",
+      "code": "BZ"
+    },
+    {
+      "id": 22,
+      "name": "BENIN",
+      "code": "BJ"
+    },
+    {
+      "id": 23,
+      "name": "BERMUDA",
+      "code": "BM"
+    },
+    {
+      "id": 24,
+      "name": "BHUTAN",
+      "code": "BT"
+    },
+    {
+      "id": 25,
+      "name": "BOLIVIA",
+      "code": "BO"
+    },
+    {
+      "id": 26,
+      "name": "BOSNIA AND HERZEGOVINA",
+      "code": "BA"
+    },
+    {
+      "id": 27,
+      "name": "BOTSWANA",
+      "code": "BW"
+    },
+    {
+      "id": 28,
+      "name": "BRAZIL",
+      "code": "BR"
+    },
+    {
+      "id": 29,
+      "name": "BRUNEI DARUSSALAM",
+      "code": "BN"
+    },
+    {
+      "id": 30,
+      "name": "BULGARIA",
+      "code": "BG"
+    }
+  ],
+  "pagination": {
+    "current_page": 1,
+    "current_elements": 30,
+    "total_pages": 9,
+    "total_elements": 250
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "metadata": {
+    "path": "/v3/pricing/domestic",
+    "http_status_code": 200,
+    "http_status": "OK",
+    "timestamp": 1669698269
+  },
+  "data": {
+    "origin": {
+      "area_id": 1,
+      "area_name": "Pulukan",
+      "suburb_id": 1,
+      "suburb_name": "Pekutatan",
+      "city_id": 1,
+      "city_name": "Jembrana",
+      "province_id": 1,
+      "province_name": "Bali",
+      "country_id": 228,
+      "country_name": "INDONESIA",
+      "lat": -8.3604757,
+      "lng": 114.8686169
+    },
+    "destination": {
+      "area_id": 2,
+      "area_name": "Pekutatan",
+      "suburb_id": 1,
+      "suburb_name": "Pekutatan",
+      "city_id": 1,
+      "city_name": "Jembrana",
+      "province_id": 1,
+      "province_name": "Bali",
+      "country_id": 228,
+      "country_name": "INDONESIA",
+      "lat": -8.4180143,
+      "lng": 114.8389443
+    },
+    "pricings": [
+      {
+        "logistic": {
+          "id": 9,
+          "name": "J&T",
+          "logo_url": "https://global-cdn.shipper.id/images/png/logistic/jnt.240x90.png",
+          "code": "JNT",
+          "company_name": "PT Global Jet Express"
+        },
+        "rate": {
+          "id": 57,
+          "name": "Express",
+          "type": "Regular",
+          "description": "Express Rate",
+          "full_description": "",
+          "is_hubless": true
+        },
+        "weight": 1,
+        "volume": 125000,
+        "volume_weight": 20.833,
+        "final_weight": 21,
+        "min_day": 1,
+        "max_day": 3,
+        "unit_price": 10000,
+        "total_price": 210000,
+        "discount": 0,
+        "discount_value": 0,
+        "discounted_price": 210000,
+        "insurance_fee": 125,
+        "must_use_insurance": false,
+        "liability_value": 50000,
+        "final_price": 210000,
+        "currency": "IDR",
+        "insurance_applied": false,
+        "base_price": 210000,
+        "surcharge_fee": 0
+      },
+      {
+        "logistic": {
+          "id": 39,
+          "name": "Anteraja",
+          "logo_url": "https://global-cdn.shipper.id/images/png/logistic/anteraja.240x90.png",
+          "code": "ANT",
+          "company_name": "PT Anteraja"
+        },
+        "rate": {
+          "id": 562,
+          "name": "Regular",
+          "type": "Regular",
+          "description": "Regular",
+          "full_description": "",
+          "is_hubless": false
+        },
+        "weight": 1,
+        "volume": 125000,
+        "volume_weight": 20.833,
+        "final_weight": 21,
+        "min_day": 2,
+        "max_day": 4,
+        "unit_price": 14200,
+        "total_price": 298200,
+        "discount": 0,
+        "discount_value": 0,
+        "discounted_price": 298200,
+        "insurance_fee": 100,
+        "must_use_insurance": true,
+        "liability_value": 50000,
+        "final_price": 298300,
+        "currency": "IDR",
+        "insurance_applied": true,
+        "base_price": 298200,
+        "surcharge_fee": 0
+      },
+      {
+        "logistic": {
+          "id": 6,
+          "name": "Tiki",
+          "logo_url": "https://global-cdn.shipper.id/images/png/logistic/tiki.240x90.png",
+          "code": "TIK",
+          "company_name": "PT Citra Van Titipan Kilat"
+        },
+        "rate": {
+          "id": 54,
+          "name": "REG",
+          "type": "Regular",
+          "description": "Regular",
+          "full_description": "",
+          "is_hubless": false
+        },
+        "weight": 1,
+        "volume": 125000,
+        "volume_weight": 20.833,
+        "final_weight": 21,
+        "min_day": 4,
+        "max_day": 4,
+        "unit_price": 15000,
+        "total_price": 315000,
+        "discount": 0,
+        "discount_value": 0,
+        "discounted_price": 315000,
+        "insurance_fee": 100,
+        "must_use_insurance": false,
+        "liability_value": 2500000,
+        "final_price": 315000,
+        "currency": "IDR",
+        "insurance_applied": false,
+        "base_price": 315000,
+        "surcharge_fee": 0
+      },
+      {
+        "logistic": {
+          "id": 1,
+          "name": "JNE",
+          "logo_url": "https://global-cdn.shipper.id/images/png/logistic/jne.240x90.png",
+          "code": "JNE",
+          "company_name": "PT Tiki Jalur Nugraha Ekakurir"
+        },
+        "rate": {
+          "id": 312,
+          "name": "JTR",
+          "type": "Trucking",
+          "description": "JNE Trucking",
+          "full_description": "update max kg to enable surcharge",
+          "is_hubless": false
+        },
+        "weight": 1,
+        "volume": 125000,
+        "volume_weight": 20.833,
+        "final_weight": 21,
+        "min_day": 7,
+        "max_day": 8,
+        "unit_price": 6500,
+        "total_price": 136500,
+        "discount": 0,
+        "discount_value": 0,
+        "discounted_price": 136500,
+        "insurance_fee": 125,
+        "must_use_insurance": false,
+        "liability_value": 50000,
+        "final_price": 136500,
+        "currency": "IDR",
+        "insurance_applied": false,
+        "base_price": 136500,
+        "surcharge_fee": 0
+      }
+    ]
+  },
+  "pagination": {
+    "current_page": 1,
+    "current_elements": 4,
+    "total_pages": 1,
+    "total_elements": 4,
+    "sort_by": ["delivery_time", "final_price"]
+  }
+}
