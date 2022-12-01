@@ -20,7 +20,7 @@ composer require meteor/shipper
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --provider="Meteor\Shipper\ShipperServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Meteor\Shipper\ShipperServiceProvider" --tag="meteor.shipper.config"
 ```
 
 ### Configuration
