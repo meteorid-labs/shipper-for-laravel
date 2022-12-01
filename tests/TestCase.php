@@ -26,7 +26,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
     {
         parent::setUp();
 
-        $this->shipper = Shipper::make();
+        $this->shipper = Shipper::make('4yGJ3HbnF4w4mTWhL8BJa62TtGytCsXN5p7AvqXOWLEqjbS5G8Hzv4kYeN3HvtOU');
 
         if ($this->useSandbox) {
             $this->shipper->useSandbox();
@@ -58,10 +58,6 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
             'Shipper' => \Meteor\Shipper\Facades\Shipper::class,
         ];
     }
-
-    abstract public function it_can_be_instantiated();
-
-    abstract public function it_contains_the_correct_methods();
 
     public function fakeResponse($filename)
     {
