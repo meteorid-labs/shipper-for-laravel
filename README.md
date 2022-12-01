@@ -5,7 +5,7 @@
 [![Total Downloads](https://poser.pugx.org/meteor/shipper/downloads)](https://packagist.org/packages/meteor/shipper)
 [![License](https://poser.pugx.org/meteor/shipper/license)](https://packagist.org/packages/meteor/shipper)
 
-Shipper is a wrapper around the [Shipper](https://shipper.id) API. It provides a simple interface for creating and managing shipments.
+Laravel Shipper is a wrapper around the [Shipper](https://shipper.id) API.
 
 ## Installation
 
@@ -25,7 +25,7 @@ php artisan vendor:publish --provider="Meteor\Shipper\ShipperServiceProvider" --
 
 ### Configuration
 
-Before you can use the Shipper API, you need to set your API key. You can do this by setting the `SHIPPER_API_KEY` environment variable in your `.env` file.
+Before you can use the Shipper API, you need to set your API key. You can do this by setting the `SHIPPER_API_KEY` environment variable in your `.env` file. if you don't have an API key, you can get one from [here](https://shipper.id).
 
 ```dotenv
 SHIPPER_API_KEY=your-api-key
