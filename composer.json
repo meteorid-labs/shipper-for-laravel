@@ -36,6 +36,7 @@
     "phpunit/phpunit": "^9.5"
   },
   "require": {
-    "guzzlehttp/guzzle": "^7.5"
+    "guzzlehttp/guzzle": "^7.5",
+    "php": "^8.0"
   }
 }

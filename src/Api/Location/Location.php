@@ -24,13 +24,15 @@ class Location
      *
      * @param  string  $keyword Input Location Keyword [Min: 3 character] string example: jakarta
      * @param  int  $admLevel Location Administrative Level [1=country, 2=province, 3=city, 4=suburb, 5=area] integer example: 1 (default: show all)
+     * @param  array  $options
      * @return \Illuminate\Http\Client\Response
      */
-    public function search($keyword, $admLevel = null)
+    public function search($keyword, $admLevel = null, $options = [])
     {
         return $this->shipper->getHttpClient()->get('v3/location', [
             'adm_level' => $admLevel,
             'keyword' => $keyword,
+            ...$options,
         ]);
     }
 
