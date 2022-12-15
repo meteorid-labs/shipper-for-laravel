@@ -5,7 +5,7 @@ namespace Meteor\Shipper\Tests\Unit;
 use Meteor\Shipper\Shipper;
 use Meteor\Shipper\Tests\TestCase;
 
-class ClassTest extends TestCase
+class ShipperTest extends TestCase
 {
     /** @test */
     public function it_can_be_instantiated()

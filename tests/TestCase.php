@@ -5,8 +5,15 @@ namespace Meteor\Shipper\Tests;
 use Illuminate\Support\Facades\Http;
 use Meteor\Shipper\Shipper;
 
-abstract class TestCase extends \Orchestra\Testbench\TestCase
+class TestCase extends \Orchestra\Testbench\TestCase
 {
+    /**
+     * The prefix to use for the database tables.
+     *
+     * @var string
+     */
+    protected $prefix = 'shipper_';
+
     /**
      * Set whether to use sandbox or not.
      *
@@ -20,13 +27,20 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
     protected $shipper;
 
     /**
-     * Setup the test environment.
+     * Set up the test case.
+     *
+     * This method is called before each test is run. It creates a new
+     * Shipper object and configures it to use the sandbox environment
+     * if the `useSandbox` property is `true`.
+     *
+     * @return void
      */
     protected function setUp(): void
     {
         parent::setUp();
 
-        $this->shipper = Shipper::make('4yGJ3HbnF4w4mTWhL8BJa62TtGytCsXN5p7AvqXOWLEqjbS5G8Hzv4kYeN3HvtOU');
+        $this->prefix = config('meteor.shipper.database.table_prefix');
+        $this->shipper = Shipper::make();
 
         if ($this->useSandbox) {
             $this->shipper->useSandbox();
@@ -59,7 +73,23 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
         ];
     }
 
-    public function fakeResponse($filename)
+    /**
+     * Define database migrations.
+     *
+     * @return void
+     */
+    protected function defineDatabaseMigrations()
+    {
+        $this->loadLaravelMigrations();
+    }
+
+    /**
+     * Fake a response from the Shipper API.
+     *
+     * @param  string  $filename
+     * @return \Illuminate\Support\Facades\Http
+     */
+    public function fakeResponse(string $filename)
     {
         $response = file_get_contents(__DIR__.'/responses/'.$filename);
 
