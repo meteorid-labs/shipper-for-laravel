@@ -25,8 +25,20 @@ class ShipperServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([
-            __DIR__.'/../config/shipper.php' => config_path('meteor/shipper.php'),
-        ], 'meteor.shipper.config');
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__.'/../config/shipper.php' => config_path('meteor/shipper.php'),
+            ], 'meteor.shipper.config');
+
+            $this->publishes([
+                __DIR__.'/../database/migrations/' => database_path('migrations'),
+            ], 'meteor.migrations');
+
+            $this->commands([
+                Console\ImportLogistic::class,
+            ]);
+        }
     }
 }
