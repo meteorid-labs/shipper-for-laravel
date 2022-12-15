@@ -34,7 +34,7 @@ class ShipperServiceProvider extends \Illuminate\Support\ServiceProvider
 
             $this->publishes([
                 __DIR__.'/../database/migrations/' => database_path('migrations'),
-            ], 'meteor.migrations');
+            ], 'meteor.shipper.migrations');
 
             $this->commands([
                 Console\ImportLogistic::class,

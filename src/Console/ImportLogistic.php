@@ -33,9 +33,11 @@ class ImportLogistic extends Command
     {
         $this->info('Importing logistic data...');
 
+        $sandbox = config('meteor.shipper.sandbox');
+
         $shipper = Shipper::make();
 
-        if (app()->environment('local')) {
+        if ($sandbox) {
             $shipper->useSandbox();
         }
 
@@ -45,7 +47,7 @@ class ImportLogistic extends Command
         if ($response['metadata']['http_status_code'] !== Response::HTTP_OK) {
             $this->error('Failed to import logistic data!');
 
-            return 1;
+            return Command::FAILURE;
         }
 
         $this->withProgressBar($response['data'], function ($data) {
@@ -64,6 +66,6 @@ class ImportLogistic extends Command
 
         $this->info('Logistic data imported successfully!');
 
-        return 0;
+        return Command::SUCCESS;
     }
 }

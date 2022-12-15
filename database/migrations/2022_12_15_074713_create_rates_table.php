@@ -15,11 +15,7 @@ return new class extends Migration
     {
         Schema::create($this->prefix.'rates', function (Blueprint $table) {
             $table->id();
-            $table->unsignedInteger('logistic_id');
-            $table->foreign('logistic_id')
-                ->references('id')
-                ->on($this->prefix.'logistics')
-                ->onDelete('cascade');
+            $table->foreignId('logistic_id')->constrained($this->prefix.'logistics')->cascadeOnDelete();
             $table->unsignedInteger('shipper_id');
             $table->string('name');
             $table->string('type_name');
