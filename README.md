@@ -47,14 +47,39 @@ $shipper = Shipper::make();
 $shipper = Shipper::make('your-api-key', 'https://api.shipper.id');
 ```
 
-#### Available methods
+### Logistic
 
-##### Locations
+Create an instance of logistic:
+
+```php
+$logistic = $shipper->logistic();
+```
+
+##### List all logistic
+
+```php
+$logistic->list()->json();
+```
+
+### Location
+
+Create an instance of location:
 
 ```php
 $location = $shipper->location();
+```
 
-$location->search('40112')->json();
+##### Search location
+
+```php
+$response = $location->search(
+    keyword: '15510',
+    admLevel: 5, // optional
+    options: ['limit' => 5] // optional
+)->json();
+```
+
+```php
 $location->getCountries()->json();
 $location->getCountry()->json();
 $location->getProvinces()->json();
@@ -71,12 +96,65 @@ $location->getAreas()->json();
 $location->getArea()->json();
 ```
 
-##### Logistics
+### Pricing
+
+Create an instance of pricing:
 
 ```php
-$logistic = $shipper->logistic();
+$pricing = $shipper->pricing();
+```
 
-$logistic->list()->json();
+> Note: `lat` and `lng` must be in string format
+
+```php
+$domesticBody = [
+    'cod' => false,
+    'destination' => [
+        'area_id' => 12284,
+        'lat' => '-6.9189281',
+        'lng' => '107.617093',
+    ],
+    'origin' => [
+        'area_id' => 12441,
+        'lat' => '-6.3179073',
+        'lng' => '106.9506175'
+    ],
+    'for_order' => true,
+    'height' => 6.54,
+    'length' => 6.54,
+    'width' => 6.54,
+    'weight' => 0.18,
+    'item_value' => 134950,
+    'sort_by' => ['final_price']
+];
+
+$internationalBody = [];
+```
+
+##### Domestic
+
+```php
+$pricing->domestic(body: $domesticBody)->json();
+```
+
+##### Domestic by rate
+
+Available rates:
+
+- `instant`
+- `regular`
+- `express`
+- `trucking`
+- `same-day`
+
+```php
+$pricing->domesticByRate(rateType: 'instant', body: $domesticBody)->json();
+```
+
+##### International
+
+```php
+$pricing->international(body: $internationalBody)->json();
 ```
 
 ##### Order
@@ -101,14 +179,4 @@ $pickup->create([])->json();
 $pickup->cancel([])->json();
 $pickup->createWithTimeslot([])->json();
 $pickup->getTimeSlots()->json();
-```
-
-##### Pricing
-
-```php
-$pricing = $shipper->pricing();
-
-$pricing->domestic([])->json();
-$pricing->domesticByRate('rate', [])->json();
-$pricing->international([])->json();
 ```
