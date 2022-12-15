@@ -20,10 +20,10 @@ class Location
     }
 
     /**
-     * Search location by keyword.
+     * Search for a location using a keyword and optional administrative level.
      *
-     * @param  string  $keyword Input Location Keyword [Min: 3 character] string example: jakarta
-     * @param  int  $admLevel Location Administrative Level [1=country, 2=province, 3=city, 4=suburb, 5=area] integer example: 1 (default: show all)
+     * @param  string  $keyword
+     * @param  int|null  $admLevel
      * @param  array  $options
      * @return \Illuminate\Http\Client\Response
      */

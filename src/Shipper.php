@@ -7,10 +7,10 @@ use Illuminate\Support\Facades\Http;
 class Shipper
 {
     /**
-     * Create a new Shipper instance.
+     * Create a new Meteor Shipper client instance.
      *
-     * @param  string  $apiKey
-     * @param  string  $apiUrl
+     * @param  string|null  $apiKey
+     * @param  string|null  $apiUrl
      * @return void
      */
     public function __construct(
@@ -22,9 +22,9 @@ class Shipper
     }
 
     /**
-     * Make a client.
+     * Create a new instance of the class.
      *
-     * @param  ?string  $url
+     * @param  mixed  ...$args
      * @return static
      */
     public static function make(...$args)
@@ -33,7 +33,7 @@ class Shipper
     }
 
     /**
-     * Get the api url.
+     * Get the API URL being used for requests.
      *
      * @return string
      */
@@ -43,7 +43,7 @@ class Shipper
     }
 
     /**
-     * Get API Key.
+     * Get the API key being used for requests.
      *
      * @return string
      */
@@ -53,7 +53,7 @@ class Shipper
     }
 
     /**
-     * Set API Key.
+     * Set the API key to use for requests.
      *
      * @param  string  $apiKey
      * @return $this
@@ -66,7 +66,7 @@ class Shipper
     }
 
     /**
-     * Use sandbox environment.
+     * Use the sandbox API URL.
      *
      * @return $this
      */
@@ -78,7 +78,7 @@ class Shipper
     }
 
     /**
-     * Use production environment.
+     * Use the production API URL.
      *
      * @return $this
      */
@@ -90,7 +90,7 @@ class Shipper
     }
 
     /**
-     * The http client.
+     * Get an HTTP client instance with the API key and URL set.
      *
      * @return \Illuminate\Http\Client\PendingRequest
      */
@@ -103,11 +103,13 @@ class Shipper
     }
 
     /**
-     * The magic method.
+     * Dynamically call an API class.
      *
      * @param  string  $name
-     * @param  mixed  $arguments
-     * @return mixed
+     * @param  array  $arguments
+     * @return \Pterodactyl\Contracts\Api\ApiInterface
+     *
+     * @throws \Exception
      */
     public function __call($name, $arguments)
     {
