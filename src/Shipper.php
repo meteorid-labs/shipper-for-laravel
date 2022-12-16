@@ -7,6 +7,13 @@ use Illuminate\Support\Facades\Http;
 class Shipper
 {
     /**
+     * Indicates if Passport migrations will be run.
+     *
+     * @var bool
+     */
+    public static $runsMigrations = true;
+
+    /**
      * Create a new Meteor Shipper client instance.
      *
      * @param  string|null  $apiKey
@@ -19,6 +26,18 @@ class Shipper
     ) {
         $this->apiKey = $apiKey ?? config('meteor.shipper.api_key');
         $this->apiUrl = $apiUrl ?? 'https://merchant-api.shipper.id';
+    }
+
+    /**
+     * Configure Shipper to not register its migrations.
+     *
+     * @return static
+     */
+    public static function ignoreMigrations()
+    {
+        static::$runsMigrations = false;
+
+        return new static;
     }
 
     /**
@@ -37,7 +56,7 @@ class Shipper
      *
      * @return string
      */
-    final public function getApiUrl()
+    public function getApiUrl()
     {
         return $this->apiUrl;
     }
@@ -47,7 +66,7 @@ class Shipper
      *
      * @return string
      */
-    final public function getApiKey()
+    public function getApiKey()
     {
         return $this->apiKey;
     }
@@ -58,7 +77,7 @@ class Shipper
      * @param  string  $apiKey
      * @return $this
      */
-    final public function setApiKey($apiKey)
+    public function setApiKey($apiKey)
     {
         $this->apiKey = $apiKey;
 
@@ -70,7 +89,7 @@ class Shipper
      *
      * @return $this
      */
-    final public function useSandbox()
+    public function useSandbox()
     {
         $this->apiUrl = 'https://merchant-api-sandbox.shipper.id';
 
@@ -82,7 +101,7 @@ class Shipper
      *
      * @return $this
      */
-    final public function useProduction()
+    public function useProduction()
     {
         $this->apiUrl = 'https://merchant-api.shipper.id';
 
