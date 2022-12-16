@@ -15,6 +15,14 @@ You can install the package via composer:
 composer require meteor/shipper
 ```
 
+## Migration Customization
+
+If you are not going to use Shipper's default migrations, you should call the `Shipper::ignoreMigrations` method in the `register` method of your `App\Providers\AppServiceProvider` class. You may export the default migrations using the `vendor:publish` Artisan command:
+
+```bash
+php artisan vendor:publish --tag=meteor.shipper.migrations
+```
+
 ## Publishing the config file
 
 You can publish the config file with:
