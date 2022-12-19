@@ -43,12 +43,13 @@ class Shipper
     /**
      * Create a new instance of the class.
      *
-     * @param  mixed  ...$args
+     * @param  string|null  $apiKey
+     * @param  string|null  $apiUrl
      * @return static
      */
-    public static function make(...$args)
+    public static function make($apiKey = null, $apiUrl = null)
     {
-        return new static(...$args);
+        return new static($apiKey, $apiUrl);
     }
 
     /**

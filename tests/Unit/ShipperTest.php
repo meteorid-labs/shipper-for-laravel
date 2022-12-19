@@ -20,6 +20,20 @@ class ShipperTest extends TestCase
     }
 
     /** @test */
+    public function it_can_set_api_key_from_make_method()
+    {
+        $shipper = Shipper::make('foo');
+        $this->assertEquals('foo', $shipper->getApiKey());
+    }
+
+    /** @test */
+    public function it_can_set_api_url_from_make_method()
+    {
+        $shipper = Shipper::make('foo', 'bar');
+        $this->assertEquals('bar', $shipper->getApiUrl());
+    }
+
+    /** @test */
     public function it_contains_the_correct_properties()
     {
         $this->assertClassHasAttribute('apiKey', Shipper::class);
