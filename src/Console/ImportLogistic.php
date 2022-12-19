@@ -33,13 +33,7 @@ class ImportLogistic extends Command
     {
         $this->info('Importing logistic data...');
 
-        $sandbox = config('meteor.shipper.sandbox');
-
         $shipper = Shipper::make();
-
-        if ($sandbox) {
-            $shipper->useSandbox();
-        }
 
         $logistic = $shipper->logistic();
         $response = $logistic->list()->json();

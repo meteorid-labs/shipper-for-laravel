@@ -21,11 +21,11 @@ class Shipper
      * @return void
      */
     public function __construct(
-        protected $apiKey = null,
-        protected $apiUrl = null,
+        public string|null $apiKey = null,
+        public string|null $apiUrl = null,
     ) {
-        $this->apiKey = $apiKey ?? config('meteor.shipper.api_key');
-        $this->apiUrl = $apiUrl ?? 'https://merchant-api.shipper.id';
+        $this->setApiKey($apiKey);
+        $this->setApiUrl($apiUrl);
     }
 
     /**
@@ -33,7 +33,7 @@ class Shipper
      *
      * @return static
      */
-    public static function ignoreMigrations()
+    public function ignoreMigrations()
     {
         static::$runsMigrations = false;
 
@@ -79,9 +79,30 @@ class Shipper
      */
     public function setApiKey($apiKey)
     {
-        $this->apiKey = $apiKey;
+        $this->apiKey = $apiKey
+            ? $apiKey
+            : config('meteor.shipper.api_key');
 
         return $this;
+    }
+
+    /**
+     * Set the API URL to use for requests.
+     *
+     * @param  string  $apiUrl
+     * @return $this
+     */
+    public function setApiUrl($apiUrl)
+    {
+        if ($apiUrl) {
+            $this->apiUrl = $apiUrl;
+
+            return $this;
+        }
+
+        $sandBox = config('meteor.shipper.sandbox', false);
+
+        return $sandBox ? $this->useSandbox() : $this->useProduction();
     }
 
     /**

@@ -32,7 +32,7 @@ class ShipperTest extends TestCase
         $this->assertTrue(method_exists(Shipper::class, '__construct'));
         $this->assertTrue(method_exists(Shipper::class, 'make'));
         $this->assertTrue(method_exists(Shipper::class, 'getApiUrl'));
-        $this->assertTrue(method_exists(Shipper::class, 'useSandbox'));
+        $this->assertTrue(method_exists(Shipper::class, 'setApiUrl'));
         $this->assertTrue(method_exists(Shipper::class, 'getApiKey'));
         $this->assertTrue(method_exists(Shipper::class, 'setApiKey'));
     }

@@ -15,13 +15,6 @@ class TestCase extends \Orchestra\Testbench\TestCase
     protected $prefix = 'shipper_';
 
     /**
-     * Set whether to use sandbox or not.
-     *
-     * @var bool
-     */
-    protected $useSandbox = true;
-
-    /**
      * @var Shipper
      */
     protected $shipper;
@@ -29,9 +22,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
     /**
      * Set up the test case.
      *
-     * This method is called before each test is run. It creates a new
-     * Shipper object and configures it to use the sandbox environment
-     * if the `useSandbox` property is `true`.
+     * This method is called before each test is run. It creates a new Shipper
      *
      * @return void
      */
@@ -41,10 +32,6 @@ class TestCase extends \Orchestra\Testbench\TestCase
 
         $this->prefix = config('meteor.shipper.database.table_prefix');
         $this->shipper = Shipper::make();
-
-        if ($this->useSandbox) {
-            $this->shipper->useSandbox();
-        }
     }
 
     /**
