@@ -2,9 +2,7 @@
 
 namespace Meteor\Shipper\Tests;
 
-use Meteor\Shipper\Tests\TestCase;
-
-class HelperTest extends TestCase
+class HelperTest extends \Meteor\Shipper\Tests\TestCase
 {
     /** @test */
     public function it_can_get_shipper_rates()
