@@ -20,7 +20,7 @@
       "Meteor\\Shipper\\Tests\\": "tests"
     },
     "files": [
-      "src/helper.php"
+      "src/helpers.php"
     ]
   },
   "extra": {

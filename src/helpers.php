@@ -51,8 +51,6 @@ if (! function_exists('shipper_categories')) {
 if (! function_exists('shipper_phone_format')) {
     function shipper_phone_format($phone)
     {
-        $phone = preg_replace('/^0|\+/', '', $phone);
-
-        return $phone;
+        return preg_replace('/^0|\+/', '', $phone);
     }
 }
