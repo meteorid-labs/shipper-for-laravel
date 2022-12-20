@@ -179,11 +179,11 @@ $location = $shipper->order();
 $response = $order->create([
     'consignee' =>  [
         'name' => 'Mr. Jonson H',
-        'phone_number' => '628811223344'
+        'phone_number' => '6288112233443'
     ],
     'consigner' =>  [
         'name' => 'Aslam H',
-        'phone_number' => '6281901560689'
+        'phone_number' => '6281901560666'
     ],
     'courier' => [
         'cod' => false,
@@ -192,7 +192,7 @@ $response = $order->create([
     ],
     'coverage' => 'domestic',
     'destination' => [
-        'address' => 'Jl. Joni Afternoon, gg. Jonwik no 100A RT 08 RW 07 Kec. Sumur Bandung, Kota Bandung, Jawa Barat, 40112',
+        'address' => 'Jl. Joni Afternoon, gg. Jonwik no 100A RT 08 RW 07 Kec. Sumur Bawah, Kota Melati, Jawa Jonggol, 50112',
         'area_id' => 12284,
         'lat' => '-6.9189281',
         'lng' => '107.617093',
@@ -200,7 +200,7 @@ $response = $order->create([
         'company_name' => 'Marvel'
     ],
     'origin' => [
-        'address' => 'Jl monyet kp rangga rt 11 rw 12 no 55 kode pos 17425 kel. jatiluhur kec. jatiasih',
+        'address' => 'Jl monyet kp rangga rt 11 rw 12 no 55 kode pos 17445 kel. jatimakmur kec. jatisolo',
         'area_id' => 12441,
         'lat' => '-6.3179073',
         'lng' => '106.9506175',
@@ -210,7 +210,7 @@ $response = $order->create([
     'package' => [
         'items' =>  [
             [
-                'name' => 'Daging Babi 1kg',
+                'name' => 'Daging Ikan 1kg',
                 'price' => 10000,
                 'qty' => 1
             ]
