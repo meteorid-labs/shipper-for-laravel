@@ -19,4 +19,14 @@ class HelperTest extends \Meteor\Shipper\Tests\TestCase
 
         $this->assertTrue(count($categories) > 0);
     }
+
+    /** @test */
+    public function it_can_format_phone_number()
+    {
+        $phone = shipper_phone_format('081234567890');
+        $phone2 = shipper_phone_format('+6281234567890');
+
+        $this->assertEquals('81234567890', $phone);
+        $this->assertEquals('6281234567890', $phone2);
+    }
 }
