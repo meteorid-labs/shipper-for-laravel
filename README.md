@@ -175,6 +175,8 @@ $location = $shipper->order();
 
 ##### Create Order
 
+> Note: `phone_number` cannot contain `+` or `0` prefix. so if your phone number is `+6288112233443` or `08111223344` you should remove the `+` or `0` prefix. you can use `shipper_format_phone` helper function to format your phone number.
+
 ```php
 $response = $order->create([
     'consignee' =>  [
