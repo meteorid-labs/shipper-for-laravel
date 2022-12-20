@@ -175,7 +175,7 @@ $location = $shipper->order();
 
 ##### Create Order
 
-> Note: `phone_number` cannot contain `+` or `0` prefix. so if your phone number is `+6288112233443` or `08111223344` you should remove the `+` or `0` prefix. you can use `shipper_format_phone` helper function to format your phone number.
+> Note: `phone_number` cannot contain `+` or `0` prefix. so if your phone number is `+6288112233443` or `08111223344` you should remove the `+` or `0` prefix. you can use `shipper_phone_format` helper function to format your phone number.
 
 ```php
 $response = $order->create([
@@ -245,4 +245,25 @@ $pickup->create([])->json();
 $pickup->cancel([])->json();
 $pickup->createWithTimeslot([])->json();
 $pickup->getTimeSlots()->json();
+```
+
+### HELPERS
+
+##### shipper_phone_format
+
+```php
+shipper_phone_format('08111223344'); // 628111223344
+shipper_phone_format('+628111223344'); // 628111223344
+```
+
+##### shipper_categories
+
+```php
+shipper_categories(); // ['domestic', 'international']
+```
+
+##### shipper_rates
+
+```php
+shipper_rates(); // ['instant', 'regular', 'express', 'trucking', 'same-day']
 ```
