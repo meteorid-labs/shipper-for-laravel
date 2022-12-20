@@ -165,12 +165,68 @@ $pricing->domesticByRate(rateType: 'instant', body: $domesticBody)->json();
 $pricing->international(body: $internationalBody)->json();
 ```
 
-##### Order
+### Order
+
+Create an instance of order:
 
 ```php
-$order = $shipper->order();
+$location = $shipper->order();
+```
 
-$order->create([])->json();
+##### Create Order
+
+```php
+$response = $order->create([
+    'consignee' =>  [
+        'name' => 'Mr. Jonson H',
+        'phone_number' => '628811223344'
+    ],
+    'consigner' =>  [
+        'name' => 'Aslam H',
+        'phone_number' => '6281901560689'
+    ],
+    'courier' => [
+        'cod' => false,
+        'rate_id' => 15,
+        'use_insurance' => false
+    ],
+    'coverage' => 'domestic',
+    'destination' => [
+        'address' => 'Jl. Joni Afternoon, gg. Jonwik no 100A RT 08 RW 07 Kec. Sumur Bandung, Kota Bandung, Jawa Barat, 40112',
+        'area_id' => 12284,
+        'lat' => '-6.9189281',
+        'lng' => '107.617093',
+        'email_address' => 'stark@mail.me',
+        'company_name' => 'Marvel'
+    ],
+    'origin' => [
+        'address' => 'Jl monyet kp rangga rt 11 rw 12 no 55 kode pos 17425 kel. jatiluhur kec. jatiasih',
+        'area_id' => 12441,
+        'lat' => '-6.3179073',
+        'lng' => '106.9506175',
+        'email_address' => 'spiderman@mail.com',
+        'company_name' => 'Foo'
+    ],
+    'package' => [
+        'items' =>  [
+            [
+                'name' => 'Daging Babi 1kg',
+                'price' => 10000,
+                'qty' => 1
+            ]
+        ],
+        'package_type' => 2,
+        'height' => 4.1,
+        'length' => 4.1,
+        'width' => 4.1,
+        'weight' => 0.03,
+        'price' => 2000
+    ],
+    'payment_type' => 'postpay'
+])->json();
+```
+
+```php
 $order->detail('order-id')->json();
 $order->trackingStatus('status-id')->json();
 $order->availableOrders()->json();
