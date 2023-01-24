@@ -71,6 +71,7 @@ class ShipperServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
+                Console\ImportCountry::class,
                 Console\ImportLogistic::class,
             ]);
         }
