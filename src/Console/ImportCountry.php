@@ -35,7 +35,7 @@ class ImportCountry extends Command
         $shipper = Shipper::make();
 
         $location = $shipper->location();
-        $response = $location->getCountries()->json();
+        $response = $location->getCountries(limit: 10000)->json();
 
         if ($response['metadata']['http_status_code'] !== Response::HTTP_OK) {
             $this->error('Failed to import country!');
